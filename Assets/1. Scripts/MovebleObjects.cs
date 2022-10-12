@@ -1,4 +1,5 @@
 using UnityEngine;
+using Lean.Pool;
 
 public class MovebleObjects : MonoBehaviour
 {
@@ -19,6 +20,6 @@ public class MovebleObjects : MonoBehaviour
     protected void Die(Vector3 startPosition, float lifeDistance)
     {
         if (Vector3.Distance(startPosition, transform.position) > lifeDistance)
-            Destroy(gameObject);
+            LeanPool.Despawn(_controller.gameObject);
     }
 }

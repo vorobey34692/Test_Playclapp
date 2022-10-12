@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4352037154531819217}
   - component: {fileID: 4352037154531819216}
   - component: {fileID: 4352037154531819219}
-  - component: {fileID: 4352037154531819218}
   - component: {fileID: 4352037154531819222}
+  - component: {fileID: 6247317734500197917}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4352037154531819229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3600588, y: 3.8815625, z: -8.793954}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85,24 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!143 &4352037154531819218
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4352037154531819229}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 1.89
-  m_Radius: 0.72
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4352037154531819222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +97,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fafc650ae4b4c7d4d97af9844535bead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trajectoryMovement: {x: 0, y: 0.43, z: 1}
+  _trajectoryMovement: {x: 0, y: 0, z: 1}
   _cubeLifeDistance: 10
-  _cubeSpeedMove: 10
+  _cubeSpeedMove: 1
+--- !u!143 &6247317734500197917
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4352037154531819229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.52
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
